@@ -1,0 +1,31 @@
+.task {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #979797;
+
+  &__input {
+    margin-right: 20px;
+  }
+}
+
+.task-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.task-filters {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-filter {
+  cursor: pointer;
+
+  &--active {
+    color: #3a7cfd;
+  }
+}

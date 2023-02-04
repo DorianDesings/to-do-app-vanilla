@@ -5,10 +5,39 @@
     <!-- PON UN FAVICON!!! -->
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <title>ToDo App</title>
   </head>
   <body>
+    <main class="main">
+      <form id="form">
+        <input
+          class="form__input"
+          type="text"
+          placeholder="Create a new todo..."
+        />
+      </form>
+      <div class="tasks">
+        <div class="task-container">
+          <div class="task">
+            <input class="task__input" type="checkbox" name="task" id="task" />
+            <label class="task__label" for="task">Poner la lavadora</label>
+          </div>
+          <div class="task">
+            <input class="task__input" type="checkbox" name="task" id="task2" />
+            <label class="task__label" for="task2">Poner la lavadora</label>
+          </div>
+        </div>
+        <div class="task-footer">
+          <span class="task-counter">5 items left</span>
+          <div id="filters" class="task-filters">
+            <span class="task-filter task-filter--active">All</span>
+            <span class="task-filter">Active</span>
+            <span class="task-filter">Completed</span>
+          </div>
+          <span class="task-counter">Clear Completed</span>
+        </div>
+      </div>
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
